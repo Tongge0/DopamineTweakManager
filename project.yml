@@ -2,13 +2,20 @@ name: DopamineTweakManager
 options:
   bundleIdPrefix: vn.nam
   deploymentTarget:
-    iOS: "15.0"
+    iOS: "16.0"
+
 targets:
   DopamineTweakManager:
     type: application
     platform: iOS
     sources:
       - path: .
+        excludes:
+          - .git
+          - .github
+          - Scripts
+          - README_VI.md
+          - project.yml
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: vn.nam.DopamineTweakManager
