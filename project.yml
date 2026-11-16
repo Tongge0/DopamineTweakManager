@@ -1,0 +1,20 @@
+name: DopamineTweakManager
+options:
+  bundleIdPrefix: vn.nam
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  DopamineTweakManager:
+    type: application
+    platform: iOS
+    sources:
+      - path: DopamineTweakManager
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: vn.nam.DopamineTweakManager
+        PRODUCT_NAME: Dopamine Tweak Manager
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        INFOPLIST_KEY_CFBundleDisplayName: Dopamine Tweak Manager
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGNING_ALLOWED: YES
